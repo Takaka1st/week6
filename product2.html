@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>product2</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <link rel="stylesheet" href="/scss/all.css">
+</head>
+<body>
+<!--上方導覽-->
+<nav class="navbar navbar-expand-md navbar-light bg-light bg-white mb-md-0 mb-4">
+  <div class="container">
+    <h1 class="logo"><a class="navbar-brand" href="#">logo</a></h1>
+    <div class="d-flex d-md-none align-items-center">
+      <a href="#" class="text-gray pl-2 d-flex align-items-center">
+        <span class="material-icons">shopping_cart</span>
+      </a>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarnav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse" id="navbarnav">
+<ul class="navbar-nav ml-auto navbar-light">
+  <li class="nav-item ml-2"> <a class="nav-link d-flex justify-content-center" href="#">
+    <span class="material-icons">
+    store</span>Product</a> </li>
+  <li class="nav-item ml-2"> <a class="nav-link d-flex justify-content-center"href="#">
+    <span class="material-icons">
+      person</span>Log in</a> </li>
+  <li class="nav-item ml-2"> <a class="nav-link d-flex justify-content-center" href="#">
+    <span class="material-icons">
+      favorite</span>Wishlist</a> </li>
+  <li class="nav-item ml-2"> <a class="nav-link d-flex justify-content-center" href="#">
+    <span class="material-icons">
+      shopping_cart</span>Cart(3)</a> </li>
+  </ul>
+</div>
+</div>
+</nav>
+<!--middle-nav-->
+<nav class="navbar navbar-expand-md bg-primary d-none d-md-block mb-5">
+  <div class="container">
+    <div class="collapse navbar-collapse" id="navbar">
+    <ul class="navbar-nav">
+    <li class="nav-item mr-2"> <a class="nav-link d-flex justify-content-center text-pure" href="#">CHANEL</a>
+    </li>
+    <li class="nav-item mr-2"> <a class="nav-link d-flex justify-content-center text-pure"href="#">Jo Malone</a>
+    </li>
+    <li class="nav-item mr-2"> <a class="nav-link d-flex justify-content-center text-pure" href="#">Curology</a>
+    </li>
+    <li class="nav-item mr-2"> <a class="nav-link d-flex justify-content-center text-pure" href="#">Dior</a>
+    </li>
+    <li class="nav-item mr-2"> <a class="nav-link d-flex justify-content-center text-pure" href="#">Chloe</a>
+    </li>
+    <li class="nav-item mr-2"> <a class="nav-link d-flex justify-content-center text-pure" href="#">ZARA</a>
+    </li>
+    </ul>
+  </div>
+</nav>
+<!--商品頁面-->
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 mb-5 col-12">
+      <div class="row mb-4">
+      <div class="col-md-12">
+      <img class="img-fluid" src="https://hexschool.github.io/webLayoutTraining1st/perfume-week6/product1.jpg" alt="CHANEL_01"></div>
+      </div>
+    </div>
+    <div class="col-md-4 col-12 ">
+      <div class="product_content">
+      <h2 class="mb-3">CHANEL N°5</h2>
+      <h5 class="mb-4">N°5，女性魅力的極致精髓。散發柔美澄透的乙醛花束香氣。經典傳奇香氛，蘊藏於極簡設計的獨特瓶身。</h5>
+      <h5 class="mb-3 font-weight-normal">NT$4,980</h5>
+      </div>
+<!--商品數量 -->
+      <form action="quantity" class="mb-2">
+      <div class="input_group d-flex number_select">
+      <select name="quantity" id="quantity" class="btn-lg custom-select">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      <button type="button" data-toggle="modal" data-target="#add_cart" class="bg-primary text-pure px-3">加入購物車</button>
+      </div>
+<!--Modal-->
+      <div class="modal fade add_cart" id="add_cart" tabindex="-1" role="dialog" aria-labelledby="add_cartTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+      <div class="modal-body">
+      <h5>已加入購物車</h5>
+      </div>
+      </div>
+      </div>
+      </div>
+      </form>
+<!--我的收藏 -->
+      <div class="add_favorite mb-3">
+      <a href="#" class="text-darkness d-flex text-decoration-none" data-toggle="modal" data-target="#add_favorite">
+      <span class="material-icons text-primary">favorite</span>加入我的收藏</a>
+<!--Modal-->
+      <div class="modal fade" id="add_favorite" tabindex="-1" role="dialog" aria-labelledby="add_favoriteTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+      <div class="modal-body">
+      <h5>加入我的收藏</h5>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+<!--購買須知-->
+      <ul class="shopping_notice list-unstyled pt-5">
+      <li>
+      <h6 class="font-weight-bold">商品購買須知</h6>
+      <p>產品因拍攝關係顏色可能略有差異，實際以廠商出貨為主。 商品情境照為示意用，僅商品主體不包含其他配件，請以規格內容物為主。 D’Perfume 盡可能確保所列商品備貨充足，但偶爾仍會有產品售罄的情況。如您所訂購的商品庫存不足，我們將盡快以電子郵件通知您。任何訂單變動均會在訂單總額與出貨訊息內更新。</p>
+      </li>
+      <li>
+      <h6 class="font-weight-bold">退換貨須知</h6>
+      <p>依《消費者保護法》的規定，於全站購物皆享有商品到貨【七日猶豫期】（含例假日）之權益。若收到的商品有任何問題，可於猶豫期內申請退貨。</p>
+      </li>
+      </ul>
+    </div>
+    
+    <div class="col-md-8 mb-5 col-12">
+      <div class="row mb-4">
+        <div class="col-md-6 col-12 mb-md-0 mb-3">
+        <img class="img-fluid" src="https://hexschool.github.io/webLayoutTraining1st/perfume-week6/product2.jpg" alt="CHANEL_02"></div>
+        <div class="col-md-6 col-12">
+        <img class="img-fluid" src="https://hexschool.github.io/webLayoutTraining1st/perfume-week6/product3.jpg" alt="CHANEL_03"></div>
+        </div>
+        <div class="row">
+        <div class="col-md-12 col-12">
+        <img class="img-fluid" src="https://hexschool.github.io/webLayoutTraining1st/perfume-week6/product1.jpg" alt="CHANEL_04"></div>
+        </div>
+    </div>
+
+  </div>
+</div>
+
+<!--copyright-->
+<nav class="navbar navbar-expand-md bg-primary">
+  <div class="container">
+    <div class="copyright d-flex">
+    <h1 class="logo"><a class="copyright-logo" href="#">logo</a></h1>
+    <div class="copyright_text d-flex align-items-center">
+    <p class="mb-0 pl-2 text-pure">© 2020. All Rights Reserved.</p></div></div>
+    <div class="collapse navbar-collapse" id="navbar">
+    <ul class="navbar-nav ml-auto">
+    <li class="nav-item ml-2"> <a class="nav-link d-flex justify-content-center text-pure" href="#">Product</a> </li>
+    <li class="nav-item ml-2"> <a class="nav-link d-flex justify-content-center text-pure"href="#">Blog</a>
+    </li>
+    <li class="nav-item ml-2"> <a class="nav-link d-flex justify-content-center text-pure" href="#">Contact</a> </li>
+    </ul>
+  </div>
+</nav>
+
+<!--java-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>

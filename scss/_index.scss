@@ -1,0 +1,91 @@
+.navbar-brand{
+  background: url(https://hexschool.github.io/webLayoutTraining1st/perfume-week6/d%E2%80%99Perfume.png)no-repeat;
+  display: block;
+  width: 128px;
+  height: 38px;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;       
+}
+.banner{
+  background: url(https://hexschool.github.io/webLayoutTraining1st/perfume-week6/index1.jpg)no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 870px;
+  font-size: 24px;
+  h2{
+    font-size: 40px;
+  }
+  a{
+    font-size: 28px;
+  }
+}
+.btn{
+  border-radius: 30px;
+}
+.btn-lg{
+  padding: 0.5rem 5rem;
+}
+.btn-outline-pure:hover{
+  background:  rgba(255, 255, 255, 0.3);
+  color: white;
+}
+.btn-outline-darkness:hover{
+  background: #E0E0E0;
+  color: black;
+}
+.productList_pic img{
+  height: 500px; 
+  width: 100%;
+}
+.index_productList h3{
+  font-size: 24px;
+}
+.soldOut{
+  position: relative;
+  opacity: rgba;
+}
+.soldou_text{
+  height: 500px; 
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background:rgba(141,141,141,0.7);
+}
+.footer_banner{
+  background: url(https://hexschool.github.io/webLayoutTraining1st/perfume-week6/index10.jpg)no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  font-size: 24px;
+  h2{
+    font-size: 32px;
+  }
+  a{
+    font-size: 28px;
+  }
+}
+input[type="submit" i] {
+  font-size: 16px;
+  border: none;
+}
+input:focus{
+  outline: 0;
+}
+.mail_input{
+  border: 2px solid $primary;
+}
+.copyright-logo{
+  background: url(https://hexschool.github.io/webLayoutTraining1st/perfume-week6/d%E2%80%99Perfumewhite.png)no-repeat;
+  display: block;
+  width: 128px;
+  height: 38px;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;  
+}
+
+

@@ -1,0 +1,27 @@
+select:focus{
+  outline: 0;
+}
+.number_select .btn-lg{
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  border: 1px solid $primary;
+  padding-left: 1rem;
+}
+button, [type="button"]{
+  border: none;
+}
+button, [type="button"]:focus{
+  outline: 0;
+}
+.custom-select{
+  width: 50%;
+  border: none;
+}
+.modal h5{
+  text-align: center;
+  font-weight: bold;
+  color: $primary;
+}
+.footer_banner{
+  display: none;
+}
